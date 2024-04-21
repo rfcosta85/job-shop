@@ -10,11 +10,16 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"set_property",
+			"find_package",
+			"target_compile_options",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"/snap/clion/274/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindOpenMP.cmake"
 		],
 		"nodes" : 
 		[
@@ -24,7 +29,35 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 619,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 15,
 				"parent" : 0
 			}
 		]
@@ -36,6 +69,14 @@
 			[
 				{
 					"fragment" : "-g -std=gnu11 -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fopenmp"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fopenmp"
 				}
 			],
 			"language" : "C",
@@ -65,6 +106,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libpthread.a",
+				"role" : "libraries"
 			}
 		],
 		"language" : "C"
